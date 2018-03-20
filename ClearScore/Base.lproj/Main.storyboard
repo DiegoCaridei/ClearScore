@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hhj-Is-j5X">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="ClearScore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Noo-gm-aii" customClass="UICircularProgressRingView" customModule="UICircularProgressRing">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Credit is" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Th-WT-yFg">
+                                        <rect key="frame" x="26" y="236" width="323" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Out of" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDI-1u-JyI">
+                                        <rect key="frame" x="16" y="359" width="343" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="0Th-WT-yFg" firstAttribute="centerX" secondItem="Noo-gm-aii" secondAttribute="centerX" id="16f-fo-es5"/>
+                                    <constraint firstItem="0Th-WT-yFg" firstAttribute="top" secondItem="Noo-gm-aii" secondAttribute="top" constant="236" id="20F-Fg-un8"/>
+                                    <constraint firstItem="0Th-WT-yFg" firstAttribute="leading" secondItem="Noo-gm-aii" secondAttribute="leading" constant="26" id="3YC-mP-5H8"/>
+                                    <constraint firstAttribute="trailing" secondItem="rDI-1u-JyI" secondAttribute="trailing" constant="16" id="JCm-Ni-Xci"/>
+                                    <constraint firstItem="rDI-1u-JyI" firstAttribute="centerX" secondItem="Noo-gm-aii" secondAttribute="centerX" id="WjU-2T-y78"/>
+                                    <constraint firstAttribute="bottom" secondItem="rDI-1u-JyI" secondAttribute="bottom" constant="223" id="t1g-w2-KyE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Noo-gm-aii" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3sd-Tz-EQa"/>
+                            <constraint firstAttribute="trailing" secondItem="Noo-gm-aii" secondAttribute="trailing" id="Cij-Zo-bgx"/>
+                            <constraint firstItem="Noo-gm-aii" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Xdx-uA-v8G"/>
+                            <constraint firstItem="Noo-gm-aii" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="cgP-eO-FWW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sjj-8k-ODg"/>
+                    <connections>
+                        <outlet property="outOfLabel" destination="rDI-1u-JyI" id="p8x-FX-xEr"/>
+                        <outlet property="progressRing" destination="Noo-gm-aii" id="Mhg-Ru-i8g"/>
+                        <outlet property="yourCreditLabel" destination="0Th-WT-yFg" id="ugY-PP-yf9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="477.60000000000002" y="132.68365817091455"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6UR-MD-69b">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hhj-Is-j5X" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="32X-nS-V1k">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="VtO-Vv-oBV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iSf-wd-UxW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-178" y="133"/>
+        </scene>
+    </scenes>
+</document>

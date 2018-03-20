@@ -1,0 +1,30 @@
+PODS:
+  - Alamofire (4.7.0)
+  - OHHTTPStubs/Core (6.1.0)
+  - OHHTTPStubs/Default (6.1.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (6.1.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (6.1.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (6.1.0)
+  - OHHTTPStubs/Swift (6.1.0):
+    - OHHTTPStubs/Default
+  - UICircularProgressRing (1.8.4)
+
+DEPENDENCIES:
+  - Alamofire
+  - OHHTTPStubs/Swift
+  - UICircularProgressRing
+
+SPEC CHECKSUMS:
+  Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  OHHTTPStubs: 1e21c7d2c084b8153fc53d48400d8919d2d432d0
+  UICircularProgressRing: 653b31f7252b2959e8234f5b9ea5f925da755954
+
+PODFILE CHECKSUM: 0531f277899c4c5f45502ce408e47cf17fc09ce9
+
+COCOAPODS: 1.4.0
