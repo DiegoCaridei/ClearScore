@@ -12,7 +12,6 @@ class MainViewController: UIViewController {
   @IBOutlet weak var outOfLabel: UILabel!
   @IBOutlet weak var yourCreditLabel: UILabel!
   @IBOutlet weak var progressRing: UICircularProgressRingView!
-  
   override func viewDidLoad() {
     super.viewDidLoad()
     DataProvider.fetchCredit { (credit) in
@@ -22,6 +21,4 @@ class MainViewController: UIViewController {
       self.outOfLabel.text = "Out of \(String(credit.maxScore))"
     }
   }
-  
 }
-

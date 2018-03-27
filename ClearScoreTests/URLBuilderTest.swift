@@ -1,4 +1,3 @@
-
 //
 //  URLBuilderTest.swift
 //  ClearScoreTests
@@ -10,8 +9,7 @@
 import XCTest
 @testable import ClearScore
 class URLBuilderTest: XCTestCase {
-  var urlBulilder:URLBuilder!
-  
+  var urlBulilder: URLBuilder!
   override func setUp() {
     super.setUp()
     urlBulilder = URLBuilder()
@@ -20,11 +18,11 @@ class URLBuilderTest: XCTestCase {
     urlBulilder = nil
     super.tearDown()
   }
-  func testApplicationURL(){
+  func testApplicationURL() {
     guard let url = URL(string: "https://5lfoiyb0b3.execute-api.us-west-2.amazonaws.com/prod/mockcredit/values")else {return}
     XCTAssertEqual(urlBulilder.applicationURL(), url)
   }
-  func testBaseURL(){
+  func testBaseURL() {
     XCTAssertEqual(urlBulilder.baseURL, "https://5lfoiyb0b3.execute-api.us-west-2.amazonaws.com")
   }
 }

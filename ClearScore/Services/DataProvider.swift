@@ -8,7 +8,7 @@
 
 import Foundation
 class DataProvider {
-  static func fetchCredit(completition:@escaping((CreditViewModel)->())){
+  static func fetchCredit(completition:@escaping((CreditViewModel) -> Void)) {
     CreditApi.shared.getCredit { (result) in
       switch result {
       case .success(let credit):
