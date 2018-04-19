@@ -1,7 +1,7 @@
 # ClearScore – iOS technical assessment
 
 We would like to see how well you write iOS apps to represent real concepts and problems.
-Notes:
+Notes: 
 
 * There is no 100% correct answer. Make any decisions you feel are sensible.
 * You can use any frameworks you like but write about why you chose it.
